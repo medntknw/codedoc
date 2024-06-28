@@ -6,7 +6,7 @@ const Y = require('yjs');
 const { setupWSConnection } = require('y-websocket/bin/utils');
 
 const app = express();
-const allowedOrigins = ['http://localhost', 'http://192.168.29.139', 'https://codedoc-frontend.vercel.app'];
+const allowedOrigins = ['http://localhost', 'https://codedoc-frontend.vercel.app'];
 app.use(cors(
   {
     origin: allowedOrigins,

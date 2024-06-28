@@ -1,5 +1,5 @@
 # Use an official Node.js runtime as the base image
-FROM node:18
+FROM node:22.3-alpine
 
 # Set the working directory in the container
 WORKDIR /app
@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 1234
 
 # Define the command to run the app
-CMD ["npm", "start"]
+CMD ["node", "server.js"]
