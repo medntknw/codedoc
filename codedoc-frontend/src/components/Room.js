@@ -18,7 +18,7 @@ function Room() {
 
     const syncEditor = (editor) => {
         const doc = new Y.Doc();
-        const newProvider = new WebsocketProvider('ws://codedoc-backend.onrender.com:80', roomId, doc);
+        const newProvider = new WebsocketProvider('wss://codedoc-backend.onrender.com', roomId, doc);
         const ytext = doc.getText("monaco");
         const ymap = doc.getMap("language");
 
