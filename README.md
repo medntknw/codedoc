@@ -12,3 +12,6 @@ docker-compose up
 ```
 2. Visit localhost:3000/
 3. Create or Join a room
+
+You can also test it out here
+http://codedoc-frontend.vercel.app
