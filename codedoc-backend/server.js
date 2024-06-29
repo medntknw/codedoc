@@ -17,6 +17,8 @@ app.use(cors(
 ));
 app.use(express.json());
 const server = http.createServer(app);
+const msecs = 240000
+server.setTimeout(msecs)
 const wss = new WebSocket.Server({ server });
 
 const rooms = new Map();
